@@ -10,7 +10,7 @@ import { FRONT_END_URL } from './config.js'
 const app = express()
 
 app.use(cors({
-    origin:`${FRONT_END_URL}`,
+    origin:FRONT_END_URL,
     credentials: true,
 }))
 
