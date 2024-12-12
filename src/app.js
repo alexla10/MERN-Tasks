@@ -15,7 +15,7 @@ app.use(cors({
 }))
 
 app.use(function(req, res, next) {
-    res.header('Access-Control-Allow-Origin', 'https://tudominio.com');  // Reemplaza con el dominio correcto
+    res.header('Access-Control-Allow-Origin', 'https://frontend-mern-dklt.onrender.com');  // Reemplaza con el dominio correcto
     res.header('Access-Control-Allow-Credentials', 'true');  // Acepta credenciales como cookies
     next();
   });
