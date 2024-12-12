@@ -3,3 +3,5 @@
  export const DB_URL = process.env.DATABASE_URL || 'mongodb://localhost:27017/merndb';
 
  export const FRONT_END_URL = process.env.FRONT_END_URL || 'http://localhost:5173';
+
+ export const PORT = process.env.PORT || 4000;
