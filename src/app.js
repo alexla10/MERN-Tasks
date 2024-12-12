@@ -10,9 +10,15 @@ import { FRONT_END_URL } from './config.js'
 const app = express()
 
 app.use(cors({
-    credentials: true,
     origin:`${FRONT_END_URL}`,
+    credentials: true,
 }))
+
+app.use(function(req, res, next) {
+    res.header('Access-Control-Allow-Origin', 'https://tudominio.com');  // Reemplaza con el dominio correcto
+    res.header('Access-Control-Allow-Credentials', 'true');  // Acepta credenciales como cookies
+    next();
+  });
 
 app.use(morgan('dev'))
 app.use(express.json())
