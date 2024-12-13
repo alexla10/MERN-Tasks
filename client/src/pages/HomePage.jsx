@@ -7,7 +7,7 @@ function HomePage() {
         <h1 className="text-2xl md:text-4xl font-bold text-center text-white mb-6">
           Organiza y gestiona tus tareas de manera eficiente.
         </h1>
-        <h5 className='text-sm'>Habilitar las cookies</h5>
+        <h4 className='text-sm text-center'>Habilitar las cookies</h4>
         
       </div>
     </div>
